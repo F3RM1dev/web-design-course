@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Автосалон AutoDrive — Контакти</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="index.html">Головна</a>
+        <a href="about.html">Про нас</a>
+        <a href="contact.html">Контакти</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Зворотний зв'язок</h1>
+      <p>Заповніть форму, щоб зв'язатися з нами.</p>
+
+      <form action="/action_page.php">
+        <label for="fname">Ім'я:</label><br />
+        <input type="text" id="fname" name="fname" /><br /><br />
+
+        <label for="lname">Прізвище:</label><br />
+        <input type="text" id="lname" name="lname" /><br /><br />
+
+        <label for="email">Електронна пошта:</label><br />
+        <input type="email" id="email" name="email" /><br /><br />
+
+        <label for="password">Пароль:</label><br />
+        <input type="password" id="password" name="password" /><br /><br />
+
+        <label for="phone">Номер телефону:</label><br />
+        <input type="tel" id="phone" name="phone" /><br /><br />
+
+        <label for="date">Бажана дата візиту:</label><br />
+        <input type="date" id="date" name="date" /><br /><br />
+
+        <label for="color">Бажаний колір авто:</label><br />
+        <input type="color" id="color" name="color" /><br /><br />
+
+        <fieldset>
+          <legend>Тип звернення</legend>
+          <label
+            ><input type="radio" name="type" value="buy" /> Купівля авто</label
+          ><br />
+          <label
+            ><input type="radio" name="type" value="service" /> Сервіс</label
+          ><br />
+          <label
+            ><input type="radio" name="type" value="test-drive" />
+            Тест-драйв</label
+          >
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>Що вас цікавить</legend>
+          <label
+            ><input type="checkbox" name="interest" value="sedan" />
+            Седан</label
+          ><br />
+          <label
+            ><input type="checkbox" name="interest" value="suv" />
+            Позашляховик</label
+          ><br />
+          <label
+            ><input type="checkbox" name="interest" value="sport" />
+            Спорткар</label
+          >
+        </fieldset>
+        <br />
+
+        <label for="budget">Бюджет:</label><br />
+        <select id="budget" name="budget">
+          <option value="low">До $15 000</option>
+          <option value="mid">$15 000 — $30 000</option>
+          <option value="high">Понад $30 000</option></select
+        ><br /><br />
+
+        <label for="file">Додати документ:</label><br />
+        <input type="file" id="file" name="file" /><br /><br />
+
+        <input type="submit" value="Відправити" />
+        <input type="reset" value="Скинути" />
+      </form>
+    </div>
+  </body>
+</html>

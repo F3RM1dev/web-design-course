@@ -1,0 +1,112 @@
+/* === ЗОВНІШНІ СТИЛІ === */
+
+/* Наслідування: загальні стилі для body, успадковуються усіма дочірніми елементами */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Клас */
+.highlight {
+  background-color: #ffffcc;
+}
+
+/* Ідентифікатор */
+#main-title {
+  color: #1a1a2e;
+}
+
+/* Навігація: фіксована, фон на всю ширину */
+nav {
+  background-color: #1a1a2e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Вкладеність: посилання всередині nav */
+nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Відступ зверху, щоб контент не ховався за фіксованим хедером */
+body {
+  padding-top: 80px;
+}
+
+/* Псевдоклас :hover */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Псевдоелемент ::first-letter */
+p::first-letter {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* Вкладеність: комірки таблиці */
+table th {
+  background-color: #1a1a2e;
+  color: white;
+}
+
+table td,
+table th {
+  border: 1px solid #999;
+  padding: 6px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/* Псевдоклас :nth-child */
+table tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+/* Вага (специфічність): загальне правило для a */
+a {
+  color: #e94560;
+}
+/* Більш специфічне правило перекриває загальне */
+p a {
+  color: #0077b6;
+}
+
+/* Варіанти: медіа-запити для різних умов */
+@media (max-width: 600px) {
+  body {
+    margin: 10px;
+  }
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+@media print {
+  nav {
+    display: none;
+  }
+}
